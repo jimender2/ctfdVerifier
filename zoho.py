@@ -18,7 +18,7 @@ def load(app):
         with open(csv_file_path, "r", encoding="utf-8") as csvfile:
             csv_reader = csv.DictReader(csvfile)
             for row in csv_reader:
-                data[row] = row
+                data[row[0]] = row[0]
         return data
 
     csv_to_json(masterFilePath)
