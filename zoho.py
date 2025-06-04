@@ -7,7 +7,7 @@ import csv
 
 logger = logging.getLogger("captcha")
 
-masterFilePath = "input.csv"
+masterFilePath = "/home/ec2-user/input.csv"
 
 
 def load(app):
